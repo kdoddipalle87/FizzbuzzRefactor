@@ -5,6 +5,7 @@ def checkeven(num1, num2):
     else:
         return False
 def fizzbuzz(n):
+    print "I am a function. My name is {}".format(fizzbuzz.__name__)
     for i in range(1, n):
         if (checkeven(i, 3) & checkeven(i, 5)):
             print 'FizzBuzz'
@@ -17,5 +18,6 @@ def fizzbuzz(n):
             print 'Buzz'
         if (i % 3) != 0 and (i % 5) != 0:
             print i
-fizzbuzz(31)
+if __name__ == "__main__":
+    fizzbuzz(31)
 
