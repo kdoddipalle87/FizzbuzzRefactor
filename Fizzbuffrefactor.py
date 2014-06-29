@@ -1,4 +1,5 @@
 __author__ = 'kdoddipalle'
+n = int(raw_input("Enter any number for FizzBuzz style printing of numbers here: "))
 def checkeven(num1, num2):
     if num1 % num2 == 0:
         return True
@@ -19,5 +20,5 @@ def fizzbuzz(n):
         if (i % 3) != 0 and (i % 5) != 0:
             print i
 if __name__ == "__main__":
-    fizzbuzz(31)
+    fizzbuzz(n)
 
